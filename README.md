@@ -1,5 +1,15 @@
 # Ethos distro tools
 
+- Supported version 1.2.9 or higher
+
+
+## How to use
+
+-- Keyboard Layout Change
+```sh
+$ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/tools/xkbmap.sh)
+```
+
 
 
 License
