@@ -6,8 +6,8 @@ url="https://raw.githubusercontent.com/antwal/ethos-tools/master/patch/$version/
 
 echo "Checking patch file, please wait..."
 
-if curl -f ${url} >/dev/null 2>&1; then
-  curl -s $url | sudo patch -d/ -p0
+if sudo curl -f ${url} >/dev/null 2>&1; then
+  sudo curl -s $url | sudo patch -d/ -p0
 else
   echo "Patch file not available for version ($version)."
   exit 0
