@@ -8,8 +8,14 @@
 -- Keyboard Layout Change
 ```sh
 $ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/tools/xkbmap.sh)
+$ sudo reboot
 ```
 
+-- Show Miner Claymore (CTRL+A+D to detach screen)
+```sh
+$ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/patch/show.sh)
+$ show miner
+```
 
 
 License
