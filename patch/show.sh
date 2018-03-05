@@ -11,5 +11,5 @@ if sudo curl -f ${url} >/dev/null 2>&1; then
 else
   echo "Patch file not available for version ($version)."
   exit 0
-f
+fi
 
