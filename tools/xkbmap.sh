@@ -3,7 +3,6 @@
 layout=""
 variant=""
 
-tmp=~/.ethos-tools/tmp
 config=~/.config/lxsession/LXDE/autostart
 keyboard="setxkbmap -layout \"@layout\" -variant \"@variant\""
 
@@ -26,19 +25,17 @@ function multi {
 
 clear
 
-mkdir -p $tmp
-
 # Keyboard Layouts
-sed '/^! layout$/,/^ *$/!d;//d' < /usr/share/X11/xkb/rules/base.lst > $tmp/layouts.lst
+sed '/^! layout$/,/^ *$/!d;//d' < /usr/share/X11/xkb/rules/base.lst > /tmp/layouts.lst
 
-multi "Please select your keyboard layout:" "$tmp/layouts.lst" "Selected keyboard layout"
+multi "Please select your keyboard layout:" "/tmp/layouts.lst" "Selected keyboard layout"
 layout="$result"
 
 # Keyboard Layout Variants
-sed '/! variant/,/^$/!d;/'$layout':/!d' < /usr/share/X11/xkb/rules/evdev.lst > $tmp/variants.lst
-sed -e 's/'$layout'://g' < $tmp/variants.lst > $tmp/variants.$layout.lst
+sed '/! variant/,/^$/!d;/'$layout':/!d' < /usr/share/X11/xkb/rules/evdev.lst > /tmp/variants.lst
+sed -e 's/'$layout'://g' < /tmp/variants.lst > /tmp/variants.$layout.lst
 
-multi "Please select your keyboard layout variant:" "$tmp/variants.$layout.lst" "Selected keyboard layout variant"
+multi "Please select your keyboard layout variant:" "/tmp/variants.$layout.lst" "Selected keyboard layout variant"
 variant="$result"
 
 # New Keyboard Layout

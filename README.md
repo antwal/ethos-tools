@@ -5,7 +5,7 @@
 
 ## How to use
 
--- Keyboard Layout Change
+-- Keyboard Layout
 ```sh
 $ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/tools/xkbmap.sh)
 $ sudo reboot
