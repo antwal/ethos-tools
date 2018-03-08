@@ -17,6 +17,11 @@ $ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/p
 $ show miner
 ```
 
+-- Update Timezone
+```sh
+$ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/tools/timezone.sh)
+```
+
 
 License
 ----
