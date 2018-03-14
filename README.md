@@ -3,7 +3,7 @@
 ethOS Mining OS
 ==============
 
-**[Website](http://ethosdistro.com/)**
+**[Website](http://ethosdistro.com/)** <br />
 **[Buy](http://mining.gpushack.com/)**
 _______
 
