@@ -1,8 +1,15 @@
-# Ethos distro tools
+[![ethOS](http://cdn.shopify.com/s/files/1/0725/0415/products/ethos_1024x1024.png?v=1493533448)](http://ethosdistro.com/)
 
+ethOS Mining OS
+==============
+
+** [Website](http://ethosdistro.com/)
+** [Buy](http://mining.gpushack.com/)
+_______
+
+## Ethos distro tools
 - Supported version 1.2.9 or higher
 
--- [Buy ethos](https:/gpushack.com/search?type=product&q=ethos)
 
 ## How to use
 
