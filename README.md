@@ -3,9 +3,10 @@
 ethOS Mining OS
 ==============
 
-** [Website](http://ethosdistro.com/)
-** [Buy](http://mining.gpushack.com/)
+**[Website](http://ethosdistro.com/)**
+**[Buy](http://mining.gpushack.com/)**
 _______
+
 
 ## Ethos distro tools
 - Supported version 1.2.9 or higher
