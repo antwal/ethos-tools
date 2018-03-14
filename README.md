@@ -1,9 +1,7 @@
-[![ethOS](http://cdn.shopify.com/s/files/1/0725/0415/products/ethos_1024x1024.png?v=1493533448)](http://ethosdistro.com/)
+<img align="left" src="http://cdn.shopify.com/s/files/1/0725/0415/products/ethos_1024x1024.png?v=1493533448" width="64"><h1>ethOS Mining OS</h1>
 
-ethOS Mining OS
-==============
+**[Website](http://ethosdistro.com/)**
 
-**[Website](http://ethosdistro.com/)** <br />
 **[Buy](http://mining.gpushack.com/)**
 _______
 
