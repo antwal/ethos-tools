@@ -55,7 +55,7 @@ if grep -q "setxkbmap" $config; then
              ;;
        [Nn]* ) 
              echo "You have unsaved changes for your keyboard layout."
-             exit
+             exit 1
              ;;
        * ) echo "Please answer yes or no.";;
     esac
