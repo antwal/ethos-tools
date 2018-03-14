@@ -7,20 +7,20 @@ config=~/.config/lxsession/LXDE/autostart
 keyboard="setxkbmap -layout \"@layout\" -variant \"@variant\""
 
 function multi { 
-	echo $1
-	nl -w8 -s. $2 | column
-	count="$(wc -l $2 | cut -f 1 -d' ')"
-	n=""
-	while true; do
-	  read -p 'Select option: ' n
-	  if [ "$n" -eq "$n" ] && [ "$n" -gt 0 ] && [ "$n" -le "$count" ]; then
-	    break
-	  fi
-	done
-
-	value="$(sed -n "${n}p" $2 | cut -f 3 -d' ')"
-	echo "$3 number $n: '$value'"
-	result="$value"
+  echo $1
+  # TODO: alternative columns LXTerminal (nl -w2 -s. /tmp/layouts.lst | pr --columns 2 -aT -W130)
+  nl -w8 -s. $2 | column
+  count="$(wc -l $2 | cut -f 1 -d' ')"
+  n=""
+  while true; do
+    read -p 'Select option: ' n
+    if [ "$n" -eq "$n" ] && [ "$n" -gt 0 ] && [ "$n" -le "$count" ]; then
+      break
+    fi
+  done
+  value="$(sed -n "${n}p" $2 | cut -f 3 -d' ')"
+  echo "$3 number $n: '$value'"
+  result="$value"
 }
 
 clear
@@ -48,12 +48,20 @@ if grep -q "setxkbmap" $config; then
   while true; do
     read -p "Do you want to overwrite settings (y/n): " yn
     case $yn in
-       [Yy]* ) sed -i.bak "s/.*setxkbmap.*/${kbmap}/g" $config; break;;
-       [Nn]* ) exit;;
+       [Yy]* ) 
+             sed -i.bak "s/.*setxkbmap.*/${kbmap}/g" $config
+             echo "Your keyboard layout is configured, please reboot system."
+             break
+             ;;
+       [Nn]* ) 
+             echo "You have unsaved changes for your keyboard layout."
+             exit
+             ;;
        * ) echo "Please answer yes or no.";;
     esac
   done
 else
   # Append
+  echo "Your keyboard layout is configured, please reboot system."
   echo "$kbmap" >> $config
 fi

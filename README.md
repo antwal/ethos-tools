@@ -12,19 +12,19 @@ _______
 
 -- Keyboard Layout
 ```sh
-$ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/tools/xkbmap.sh)
+$ source <(curl -Ls https://git.io/vxkiW)
 $ sudo reboot
 ```
 
 -- Show Miner Claymore (CTRL+A+D to detach screen)
 ```sh
-$ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/patch/show.sh)
+$ source <(curl -Ls https://git.io/vxkiZ)
 $ show miner
 ```
 
 -- Update Timezone
 ```sh
-$ source <(curl -s https://raw.githubusercontent.com/antwal/ethos-tools/master/tools/timezone.sh)
+$ source <(curl -Ls https://git.io/vxk6o)
 ```
 
 
