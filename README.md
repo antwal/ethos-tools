@@ -1,8 +1,6 @@
 <img align="left" src="http://cdn.shopify.com/s/files/1/0725/0415/products/ethos_1024x1024.png?v=1493533448" width="64"><h1>ethOS Mining OS</h1>
 
 **[Website](http://ethosdistro.com/)**
-
-**[Buy](http://mining.gpushack.com/)**
 _______
 
 
