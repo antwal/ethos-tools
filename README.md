@@ -2,6 +2,7 @@
 
 - Supported version 1.2.9 or higher
 
+-- [Buy ethos](https:/gpushack.com/search?type=product&q=ethos)
 
 ## How to use
 
