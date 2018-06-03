@@ -32,7 +32,6 @@ License
 ----
 
 Apache 2.0
-**No comercial use**
 
 ### Please consider a donation
 
